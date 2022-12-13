@@ -1,6 +1,6 @@
-package dawprogramacion.test;
+package dawprogramacion.testparanoobs;
 
-public class test 
+public class App 
 {
     public static void main( String[] args )
     {
