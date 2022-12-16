@@ -1,7 +1,8 @@
 package dawprogramacion.calculadora;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
 
 public class calculadoratest {
     @Test
@@ -28,7 +29,7 @@ public class calculadoratest {
         int numero1 = 3, numero2 = 7;
         calculadora calc = new calculadora();
 
-        assertTrue("Tres mas siete debería ser 10", expected == calc.sumar(numero1, numero2));
+        assertTrue(expected == calc.sumar(numero1, numero2), "Tres mas siete debería ser 10");
     }
 
     @Test
@@ -37,7 +38,7 @@ public class calculadoratest {
         int numero1 = 3, numero2 = 7;
         calculadora calc = new calculadora();
 
-        assertFalse("Tres mas siete no debería ser 100", expected == calc.sumar(numero1, numero2));
+        assertFalse(expected == calc.sumar(numero1, numero2), "Tres mas siete no debería ser 100");
     }
 
     @Test
@@ -46,7 +47,7 @@ public class calculadoratest {
         int numero1 = 3, numero2 = 3;
         calculadora calc = new calculadora();
 
-        assertTrue("Tres por tres  debería ser 9", expected == calc.multiplicar(numero1, numero2));
+        assertTrue(expected == calc.multiplicar(numero1, numero2), "Tres por tres  debería ser 9");
     }
     @Test
     public void nueveDividirTresEsTres(){
@@ -54,7 +55,7 @@ public class calculadoratest {
         int numero1= 9, numero2 = 3;
         calculadora calc = new calculadora();
 
-        assertTrue("Nueve entre tres debería ser 3", expected == calc.dividir(numero1, numero2));
+        assertTrue(expected == calc.dividir(numero1, numero2), "Nueve entre tres debería ser 3");
     }
     @Test
     public void nueveDividirTresEsCuatro(){
@@ -62,7 +63,7 @@ public class calculadoratest {
         int numero1= 9, numero2 = 3;
         calculadora calc = new calculadora();
 
-        assertFalse("Nueve entre tres debería ser 3", expected == calc.dividir(numero1, numero2));
+        assertFalse(expected == calc.dividir(numero1, numero2), "Nueve entre tres debería ser 3");
     }
 
 }
