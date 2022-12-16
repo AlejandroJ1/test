@@ -11,7 +11,7 @@ public class NotasTest {
         double nota = -5.4;
         Notas notas = new Notas();
 
-        assertEquals(expected, notas.notaATexto(nota));
+        assertEquals(expected, notas.notaATexto(nota), "Nota negativa no puede ser evaluada");
     }
     
 }
